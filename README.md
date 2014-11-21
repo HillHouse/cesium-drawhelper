@@ -25,3 +25,5 @@ Check the index.html example to get started.
 Check the website http://pad.geocento.com/DrawHelper/ for a live version.
 
 Future versions will include shape dragging, scaling and rotation and support for hierarchical polygon editing.
+
+Cesium Version Support: Works with Cesium v1.0+.  Not fully functional in b30 and below.
