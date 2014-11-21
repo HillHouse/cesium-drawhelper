@@ -948,7 +948,11 @@ var DrawHelper = (function() {
     }
 
     function getExtentCorners(value) {
-        return ellipsoid.cartographicArrayToCartesianArray([Cesium.Rectangle.northwest(value), Cesium.Rectangle.northeast(value), Cesium.Rectangle.southeast(value), Cesium.Rectangle.southwest(value)]);
+        if(Cesium.Rectangle.northeast){
+            return ellipsoid.cartographicArrayToCartesianArray([Cesium.Rectangle.northwest(value), Cesium.Rectangle.northeast(value), Cesium.Rectangle.southeast(value), Cesium.Rectangle.southwest(value)]);
+        } else {
+            return ellipsoid.cartographicArrayToCartesianArray([Cesium.Rectangle.getNorthwest(value), Cesium.Rectangle.getNortheast(value), Cesium.Rectangle.getSoutheast(value), Cesium.Rectangle.getSouthwest(value)]);
+        }
     }
 
     _.prototype.startDrawingExtent = function(options) {
