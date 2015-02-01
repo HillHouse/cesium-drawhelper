@@ -1,0 +1,47 @@
+﻿body {
+    font-family: 'Segoe UI', sans-serif;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#embeddedMap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.toolishStyle {
+    display: none;
+    padding: 0;
+    vertical-align: top;
+    height: auto;
+    width: auto;
+    font-size: 11px;
+    /*color: white;*/
+    position: absolute;
+    z-index: 5000;
+    background-color: #428bca; /* old rgba(66, 139, 202, 128) */
+}
+
+.contextMenuStyle {
+    display: none;
+    padding: 0;
+    vertical-align: top;
+    height: auto;
+    font-size: 11px;
+    color: white;
+    position: absolute;
+    z-index: 5000;
+    /* ReSharper disable once CssBrowserCompatibility */
+    opacity: 0.8;
+    background-color: #000; /* old rgba(66, 139, 202, 128) */
+}
+
+/* Override BootBox dialog background color */
+.modal-content {
+    background-color: #555555;
+}

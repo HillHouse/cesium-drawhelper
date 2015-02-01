@@ -1,0 +1,16 @@
+﻿<!--
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+-->
+
+<div ng-controller="MapController">
+    <div id="dirt" class="fullSize" style="position: relative; width: 100%; height: 100%">
+        <div id="drawingToolbar" class="toolishStyle" style="top: 5px; left: 5px; display:block"></div>
+        <div id="toolish" class="toolishStyle"></div>
+        <!-- This is the popup context menu for the drawing tool elements; could be used for other menus as well -->
+        <div id="contextMenu" class="contextMenuStyle"></div>
+    </div>
+    <!-- This is the logger for the drawing tool. Messages should disappear after a time - 5 seconds as of this writing. -->
+    <div id="drawingLogging"> </div>
+</div>

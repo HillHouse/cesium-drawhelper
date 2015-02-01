@@ -1,0 +1,58 @@
+﻿@import url(../Scripts/Cesium/Widgets/widgets.css);
+@import url(../Scripts/Cesium/Widgets/lighter.css);
+
+#drawingToolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline;
+    margin: 10px;
+    padding: 0;
+    background: black;
+}
+
+#drawingLogging {
+    position: absolute;
+    bottom: 52px;
+    left: 144px;
+    display: none;
+    margin: 10px;
+    padding: 10px;
+    background: transparent;
+}
+
+body {
+    background: #000;
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 14pt;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+option {
+    background-color: #fff;
+    color: #000;
+}
+
+    option:disabled {
+        color: #ccc;
+    }
+
+.fullSize {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
